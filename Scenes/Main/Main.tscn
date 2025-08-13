@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c500kuwqj1ejv"]
+[gd_scene load_steps=5 format=3 uid="uid://c500kuwqj1ejv"]
 
 [ext_resource type="FontFile" uid="uid://bskirw06ex4ke" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="1_p8rbg"]
 [ext_resource type="PackedScene" uid="uid://dft184w4wwmr6" path="res://Scenes/LevelButton/LevelButton.tscn" id="2_qtv3y"]
+[ext_resource type="PackedScene" uid="uid://bls0xn7322opo" path="res://Scenes/FrontSprite/FrontSprite.tscn" id="3_cmk6n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qtv3y"]
 font = ExtResource("1_p8rbg")
@@ -41,6 +42,9 @@ theme_override_constants/margin_bottom = 20
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 115
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -79,4 +83,31 @@ layout_mode = 2
 level_button_number = 6
 
 [node name="HBSprites" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 31
+
+[node name="FrontSprite" parent="MarginContainer/VBoxContainer/HBSprites" instance=ExtResource("3_cmk6n")]
+layout_mode = 2
+
+[node name="FrontSprite2" parent="MarginContainer/VBoxContainer/HBSprites" instance=ExtResource("3_cmk6n")]
+layout_mode = 2
+
+[node name="FrontSprite3" parent="MarginContainer/VBoxContainer/HBSprites" instance=ExtResource("3_cmk6n")]
+layout_mode = 2
+
+[node name="FrontSprite4" parent="MarginContainer/VBoxContainer/HBSprites" instance=ExtResource("3_cmk6n")]
+layout_mode = 2
+
+[node name="FrontSprite5" parent="MarginContainer/VBoxContainer/HBSprites" instance=ExtResource("3_cmk6n")]
+layout_mode = 2
+
+[node name="FrontSprite6" parent="MarginContainer/VBoxContainer/HBSprites" instance=ExtResource("3_cmk6n")]
+layout_mode = 2
+
+[node name="FrontSprite7" parent="MarginContainer/VBoxContainer/HBSprites" instance=ExtResource("3_cmk6n")]
+layout_mode = 2
+
+[node name="FrontSprite8" parent="MarginContainer/VBoxContainer/HBSprites" instance=ExtResource("3_cmk6n")]
 layout_mode = 2
