@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxd4ncrsaupb1"]
+
+[ext_resource type="Texture2D" uid="uid://halks78jcy6i" path="res://assets/ui/UIbg.png" id="1_eeca3"]
+[ext_resource type="Script" uid="uid://blantxpn7ybsp" path="res://Scenes/GameOverUI/GameOverUi.gd" id="1_rh7ns"]
+[ext_resource type="LabelSettings" uid="uid://ymqj6qkn4heq" path="res://Resources/white_32_labelsettings.tres" id="2_rh7ns"]
+
+[node name="GameOverUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_rh7ns")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -180.0
+offset_right = 256.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_eeca3")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="VB" type="VBoxContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="NinePatchRect/VB"]
+layout_mode = 2
+text = "You Win"
+label_settings = ExtResource("2_rh7ns")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MovesLabel" type="Label" parent="NinePatchRect/VB"]
+layout_mode = 2
+text = "You Win"
+label_settings = ExtResource("2_rh7ns")
+horizontal_alignment = 1
+vertical_alignment = 1

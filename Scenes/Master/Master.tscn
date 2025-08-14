@@ -25,6 +25,7 @@ texture = ExtResource("1_h6g34")
 expand_mode = 1
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
+volume_db = -80.0
 
 [node name="Main" parent="." instance=ExtResource("3_7tgqy")]
 visible = false

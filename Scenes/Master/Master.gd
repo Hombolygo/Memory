@@ -6,8 +6,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	exit_button_pressed()
-	#var st = LevelDataSelector.get_level_setting(7);
+	exit_button_pressed();
 	pass # Replace with function body.
 
 func _enter_tree() -> void:
