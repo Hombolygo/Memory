@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ce83a11mhh7r"]
+[gd_scene load_steps=6 format=3 uid="uid://ce83a11mhh7r"]
 
 [ext_resource type="Texture2D" uid="uid://dw3w0yx58ef67" path="res://assets/frames/hidden_frame_blank.png" id="1_gwu2e"]
+[ext_resource type="Script" uid="uid://dturt6jv8pdrb" path="res://Scenes/Game/Game.gd" id="1_y3kpf"]
 [ext_resource type="LabelSettings" uid="uid://ymqj6qkn4heq" path="res://Resources/white_32_labelsettings.tres" id="2_ln2h6"]
 [ext_resource type="Texture2D" uid="uid://bwngsqm6sduag" path="res://assets/ui/blue_button00.png" id="2_xbxml"]
 [ext_resource type="Texture2D" uid="uid://ywtwa3nwt5p3" path="res://assets/ui/green_button00.png" id="4_y3kpf"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_y3kpf")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -133,3 +135,5 @@ text = "Exit"
 label_settings = ExtResource("2_ln2h6")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="HBoxContainer2/MarginContainer/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

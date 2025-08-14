@@ -15,4 +15,5 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
+	SignalHub.show_game.emit(level_button_number);
 	pass # Replace with function body.
